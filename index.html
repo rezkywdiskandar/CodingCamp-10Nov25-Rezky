@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Rezky Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1><i class="fas fa-tasks"></i> My To-Do List</h1>
+            <p class="subtitle">Todo list app task from revou by resky</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Form Section -->
+            <section class="form-section">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="todo-input" 
+                        class="input-field" 
+                        placeholder="Enter a new to-do item..."
+                        autocomplete="off"
+                    >
+                    <span class="error-message" id="input-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <input 
+                        type="date" 
+                        id="todo-date" 
+                        class="input-field"
+                    >
+                    <span class="error-message" id="date-error"></span>
+                </div>
+
+                <button type="button" id="add-btn" class="btn btn-add">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </section>
+
+            <!-- Filter and Action Section -->
+            <section class="action-section">
+                <div class="filter-group">
+                    <input 
+                        type="text" 
+                        id="filter-input" 
+                        class="filter-field" 
+                        placeholder="Filter by title..."
+                    >
+                    <select id="filter-date" class="filter-field">
+                        <option value="">Filter by date</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button id="reset-filter-btn" class="btn btn-secondary"><i class="fas fa-redo"></i> Reset</button>
+                    <button id="clear-all-btn" class="btn btn-danger"><i class="fas fa-trash"></i> Clear All</button>
+                </div>
+            </section>
+
+            <!-- To-Do List Section -->
+            <section class="todo-section">
+                <div class="todo-header">
+                    <h2>Tasks List</h2>
+                    <span id="todo-count" class="todo-count">0 items</span>
+                </div>
+
+                <ul id="todo-list" class="todo-list">
+                    <li class="empty-state"><i class="fas fa-inbox"></i> No to-do items yet. Add one to get started!</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2025 Rezky Apps | To-Do List Application</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
