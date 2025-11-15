@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     min-height: 100vh;
     padding: 20px;
     display: flex;
@@ -26,7 +26,7 @@ body {
 
 /* ===== Header Section ===== */
 .header {
-    background: #3b82f6;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -74,8 +74,8 @@ body {
 .input-field:focus,
 .filter-field:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: #2d5aa0;
+    box-shadow: 0 0 0 3px rgba(45, 90, 160, 0.1);
 }
 
 .error-message {
@@ -101,14 +101,14 @@ body {
 }
 
 .btn-add {
-    background: #3b82f6;
+    background: linear-gradient(135deg, #2d5aa0 0%, #1a365d 100%);
     color: white;
     align-self: flex-end;
 }
 
 .btn-add:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 5px 15px rgba(45, 90, 160, 0.4);
 }
 
 .btn-add:active {
@@ -127,35 +127,35 @@ body {
 }
 
 .btn-danger {
-    background: #e74c3c;
+    background: #d32f2f;
     color: white;
 }
 
 .btn-danger:hover {
-    background: #c0392b;
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    background: #b71c1c;
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
 }
 
 .btn-delete {
-    background: #e74c3c;
+    background: #d32f2f;
     color: white;
     padding: 6px 12px;
     font-size: 0.85rem;
 }
 
 .btn-delete:hover {
-    background: #c0392b;
+    background: #b71c1c;
 }
 
 .btn-complete {
-    background: #27ae60;
+    background: #2e7d32;
     color: white;
     padding: 6px 12px;
     font-size: 0.85rem;
 }
 
 .btn-complete:hover {
-    background: #229954;
+    background: #1b5e20;
 }
 
 /* ===== Action Section ===== */
@@ -204,7 +204,7 @@ body {
 }
 
 .todo-count {
-    background: #3b82f6;
+    background: linear-gradient(135deg, #2d5aa0 0%, #1a365d 100%);
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -222,20 +222,20 @@ body {
     align-items: center;
     padding: 15px;
     margin-bottom: 10px;
-    background: #f9f9f9;
-    border-left: 4px solid #3b82f6;
+    background: #f8f9fa;
+    border-left: 4px solid #2d5aa0;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 .todo-item:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    background: #fcfcfc;
+    box-shadow: 0 3px 10px rgba(45, 90, 160, 0.15);
+    background: #f0f3f7;
 }
 
 .todo-item.completed {
     opacity: 0.6;
-    border-left-color: #27ae60;
+    border-left-color: #2e7d32;
 }
 
 .todo-item.completed .todo-title {
