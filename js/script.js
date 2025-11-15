@@ -80,7 +80,7 @@ function deleteTodo(id) {
     todos = todos.filter(todo => todo.id !== id);
     saveTodos();
     updateFilterDateOptions();
-    renderTodos(filteredTodos);
+    applyFilter();
 }
 
 /**
@@ -91,7 +91,7 @@ function toggleTodoComplete(id) {
     if (todo) {
         todo.completed = !todo.completed;
         saveTodos();
-        renderTodos(filteredTodos);
+        applyFilter();
     }
 }
 
